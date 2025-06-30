@@ -21,6 +21,7 @@ A Python-based traffic monitoring and analysis system using computer vision and 
 
 ## 📂 Project Structure
 
+```bash
 traffic4/
 ├── 🗂️ main.py                # Entry point for the application
 ├── 🛠️ utils.py               # Utility functions for detection and logging
@@ -28,7 +29,7 @@ traffic4/
 ├── 🎞️ data/                  # Sample videos or images
 ├── 💾 output/                # Output logs and processed videos
 └── 📄 requirements.txt       # Dependencies
-
+```
 ---
 
 ## 🛠️ Installation
@@ -71,25 +72,30 @@ python main.py --input 0
 
 ## 📝 Requirements
 
+```bash
 # Core dependencies:
 # 🐍 opencv-python
 # 🐍 numpy
 # 🐍 pandas
 # 🐍 matplotlib
 # 🐍 imutils
+```
 
 # Install all at once:
-pip install -r requirements.txt
 
+```bash
+pip install -r requirements.txt
+```
 ---
 
 ## 📈 Future Extensions
 
+```bash
 ✅ Integrate YOLOv8 for faster vehicle detection  
 ✅ Add speed detection using frame analysis  
 ✅ Generate daily/weekly traffic reports  
 ✅ Deploy using Flask/Django for a live dashboard
-
+```
 ---
 
 ## 🤝 Contributing
@@ -118,8 +124,3 @@ MIT License
 3️⃣ Adjust folders if needed.  
 4️⃣ Commit and push to GitHub.  
 
-Your `README.md` will now look **clean, professional, and beginner-friendly**.
-
----
-
-# 🚀 Happy Coding!
