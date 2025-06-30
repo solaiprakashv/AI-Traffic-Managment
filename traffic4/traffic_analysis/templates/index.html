@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Analysis Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Traffic Analysis Dashboard</h1>
+        
+        <div class="row">
+            <div class="col-6">
+                <h2>Total Vehicle Counts</h2>
+                <canvas id="totalChart"></canvas>
+            </div>
+            <div class="col-6">
+                <h2>Lane Vehicle Counts</h2>
+                <select id="laneSelect">
+                    <option value="">Select a lane</option>
+                    <!-- Options will be populated by JavaScript -->
+                </select>
+                <canvas id="laneChart"></canvas>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-12">
+                <form method="POST" action="/predict">
+                    <label for="date">Select Date:</label>
+                    <input type="date" id="date" name="date" required>
+                    <button type="submit" class="btn">Get Predictions</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
